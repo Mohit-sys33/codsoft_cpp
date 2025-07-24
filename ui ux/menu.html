@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fcefd3;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu-container {
+      max-width: 800px;
+      margin: auto;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #d35400;
+    }
+
+    .category {
+      margin-top: 40px;
+    }
+
+    .category h2 {
+      border-bottom: 2px solid #d35400;
+      padding-bottom: 5px;
+      color: #e67e22;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px dashed #ccc;
+    }
+
+    .menu-item:last-child {
+      border-bottom: none;
+    }
+
+    .menu-item-name {
+      font-weight: bold;
+    }
+
+    .menu-item-price {
+      color: #2ecc71;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .menu-item-price {
+        margin-top: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="menu-container">
+    <h1>Delicious Bites Menu</h1>
+
+    <div class="category">
+      <h2>🍔 Starters</h2>
+      <div class="menu-item">
+        <span class="menu-item-name">Garlic Bread</span>
+        <span class="menu-item-price">₹80</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Spring Rolls</span>
+        <span class="menu-item-price">₹120</span>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>🍕 Main Course</h2>
+      <div class="menu-item">
+        <span class="menu-item-name">Margherita Pizza</span>
+        <span class="menu-item-price">₹250</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Paneer Butter Masala</span>
+        <span class="menu-item-price">₹220</span>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>🍰 Desserts</h2>
+      <div class="menu-item">
+        <span class="menu-item-name">Chocolate Brownie</span>
+        <span class="menu-item-price">₹90</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Gulab Jamun</span>
+        <span class="menu-item-price">₹70</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
